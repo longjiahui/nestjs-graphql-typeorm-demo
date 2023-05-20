@@ -14,11 +14,11 @@ export class User {
 
   @HideField()
   @Field(() => String, { nullable: true })
-  @Column()
+  @Column({ nullable: true })
   password?: string
 
   @Field(() => String, { nullable: true })
-  @Column()
+  @Column({ nullable: true })
   name?: string
 
   @Field(() => Date)
